@@ -1,0 +1,14 @@
+# Local tooling
+.claude/
+
+# Raw source images extracted from the brand PDFs (not used by the site)
+assets/extracted/
+
+# Original brand reference boards (kept locally, not needed for hosting)
+WhatsApp Image*.jpeg
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
