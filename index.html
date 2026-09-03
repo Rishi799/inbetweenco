@@ -19,32 +19,29 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header" id="header">
     <div class="wrap nav">
-      <a class="nav__logo" href="index.html" aria-label="in-Between Co home">
-        <img src="assets/logo.png" alt="in-Between Co" />
-      </a>
+      <a class="nav__logo" href="index.html" aria-label="in-Between Co home"><img src="assets/logo.png" alt="in-Between Co" /></a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#why">Why in-Between?</a>
         <a href="#philosophy">Our Philosophy</a>
         <a href="festive.html">Festive Edit 2026</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="nav__cta desk" href="festive.html">Explore Festive Edit
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <a class="nav__cta desk" href="festive.html">Explore Festive Edit
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-    <a class="mlink" href="#why">Why in-Between?</a>
-    <a class="mlink" href="#philosophy">Our Philosophy</a>
-    <a class="mlink" href="festive.html">Festive Edit 2026</a>
-    <a class="mlink" href="#contact">Contact</a>
+    <a class="mlink" href="#why"><i>01</i> Why in-Between?</a>
+    <a class="mlink" href="#philosophy"><i>02</i> Our Philosophy</a>
+    <a class="mlink" href="festive.html"><i>03</i> Festive Edit 2026</a>
+    <a class="mlink" href="#contact"><i>04</i> Contact</a>
     <div class="mobile-nav__foot">
       <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -54,34 +51,38 @@
 
   <main>
 
-    <!-- SECTION 1 — HERO -->
+    <!-- HERO -->
     <section class="hero">
-      <div class="wrap">
-        <div class="hero__grid">
-          <div class="hero__copy">
+      <div class="split split--tl">
+        <div class="split__text">
+          <div class="split__inner">
             <h1 class="reveal">Food worth sharing.<br>For all the moments <span class="accent">in between.</span></h1>
             <p class="hero__body reveal d1">From everyday snacking to something brought out for friends, family or an occasion — we like food that earns its place on the table.</p>
             <div class="hero__actions reveal d2">
               <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
-              <a class="tlink" href="#why">Why in-Between?
+              <a class="ulink" href="#why">Why in-Between?
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
               </a>
             </div>
           </div>
-          <div class="hero__media reveal-img">
-            <img src="assets/hero.jpg" alt="Bowls of makhana, roasted edamame, dry-fruit mix and millet on a warm neutral table" width="1536" height="1024" fetchpriority="high" />
-          </div>
+        </div>
+        <div class="split__media hero__media reveal-img">
+          <img src="assets/hero.jpg" alt="Bowls of makhana, roasted edamame, dry-fruit mix and millet on a warm neutral table" width="1536" height="1024" fetchpriority="high" />
+          <span class="split__cap">Makhana · Edamame · Dry fruit · Millet</span>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 2 — WHY IN-BETWEEN -->
+    <!-- WHY -->
     <section class="why section" id="why">
       <div class="wrap">
-        <div class="why__inner">
-          <span class="eyebrow reveal">Why in-Between?</span>
+        <div class="why__grid">
+          <div class="why__aside reveal">
+            <span class="label">Why in-Between?</span>
+            <span class="num">01</span>
+          </div>
           <p class="why__stanza reveal d1">
             Most of what we eat isn’t part of a meal.<br>
             <span class="soft">It’s something between meetings. A snack packed for the day. Something brought out when friends drop by. A box carried home for family. A gift sent because an occasion deserves one.</span>
@@ -91,70 +92,73 @@
       </div>
     </section>
 
-    <!-- SECTION 3 — OUR PHILOSOPHY -->
+    <!-- PHILOSOPHY -->
     <section class="philosophy section" id="philosophy">
       <div class="wrap">
-        <div class="philosophy__inner">
-          <span class="eyebrow reveal">Our Philosophy</span>
-          <h2 class="reveal d1">Our standard is personal.</h2>
-          <div class="philosophy__body">
-            <p class="reveal d1">Before something becomes part of in-Between, there’s a simple question we come back to:</p>
-            <p class="philosophy__q reveal d2">“Would we be happy to put it on our own table and share it with the people we care about?”</p>
-            <p class="reveal d2">If the answer isn’t yes, it doesn’t make the cut. We like familiar foods done well, combinations that have a reason to exist, and presentation that adds to the experience without overwhelming it.</p>
+        <div class="marker reveal"><span>Our Philosophy</span><b>02</b></div>
+        <div class="philosophy__grid">
+          <div class="philosophy__lead">
+            <h2 class="reveal">Our standard is personal.</h2>
+            <p class="close reveal d1">Chosen with care. Made to be shared.</p>
           </div>
-          <p class="philosophy__close reveal d3">Chosen with care. Made to be shared.</p>
+          <div class="philosophy__main">
+            <div class="philosophy__body">
+              <p class="reveal">Before something becomes part of in-Between, there’s a simple question we come back to:</p>
+              <p class="philosophy__q reveal d1">“Would we be happy to put it on our own table and share it with the people we care about?”</p>
+              <p class="reveal d2">If the answer isn’t yes, it doesn’t make the cut. We like familiar foods done well, combinations that have a reason to exist, and presentation that adds to the experience without overwhelming it.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4 — FESTIVE EDIT INTRODUCTION -->
-    <section class="festive-intro section">
-      <div class="wrap">
-        <div class="festive-intro__grid">
-          <div class="festive-intro__copy">
-            <span class="eyebrow reveal">The Festive Edit · 2026</span>
+    <!-- FESTIVE EDIT INTRODUCTION -->
+    <section class="festive-intro">
+      <div class="split split--tr">
+        <div class="split__media reveal-img">
+          <!-- Product image: closed Signature box (replaceable) -->
+          <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed, with gold-foil detailing" width="1050" height="970" loading="lazy" />
+        </div>
+        <div class="split__text">
+          <div class="split__inner">
+            <span class="label festive-intro__kicker reveal">The Festive Edit · 2026</span>
             <h2 class="reveal d1">Familiar favourites.<br>A more considered way to gift them.</h2>
             <p class="festive-intro__body reveal d2">Our Festive Edit brings together food we enjoy, distinctive flavours and presentation designed to make the gesture feel special.</p>
             <div class="festive-intro__cta reveal d2">
-              <a class="tlink tlink--saffron" href="festive.html">Explore the collection
+              <a class="ulink ulink--saffron" href="festive.html">Explore the collection
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
           </div>
-          <div class="festive-intro__media reveal-img">
-            <!-- Product image: closed Signature box (replaceable) -->
-            <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed, with gold-foil detailing" loading="lazy" width="1050" height="970" />
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5 — THE COLLECTION -->
+    <!-- THE COLLECTION -->
     <section class="collection section" id="collection">
       <div class="wrap">
-        <div class="collection__head reveal">
-          <span class="eyebrow">The Collection</span>
-          <h2>Three gifts for the season.</h2>
+        <div class="collection__head">
+          <div class="marker reveal"><span>The Collection</span><b>03</b></div>
+          <h2 class="reveal d1">Three gifts for the season.</h2>
         </div>
 
         <!-- Signature — leads -->
-        <article class="feature reveal" id="signature-preview">
+        <article class="feature" id="signature-preview">
           <div class="feature__media reveal-img">
-            <!-- Product image: open Signature box (replaceable) -->
-            <img src="assets/signature-open.jpg" alt="The Signature gift box open, with three glass jars" loading="lazy" />
+            <img src="assets/signature-open.jpg" alt="The Signature gift box open, with three labelled glass jars" loading="lazy" />
           </div>
-          <div class="feature__copy">
-            <span class="feature__no">The festive lead</span>
-            <h3>The Signature</h3>
-            <p class="feature__desc">Our three-jar signature gift, bringing together familiar flavours with a little more character.</p>
-            <div class="feature__price">₹999</div>
-            <ul class="contents">
-              <li><span class="dot"></span> Malabar Pepper Cashews</li>
-              <li><span class="dot"></span> Ghee-Roasted Makhana &amp; Almonds</li>
-              <li><span class="dot"></span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
+          <div class="feature__info">
+            <span class="feature__no reveal">01</span>
+            <h3 class="reveal">The Signature</h3>
+            <p class="feature__desc reveal d1">Our three-jar signature gift, bringing together familiar flavours with a little more character.</p>
+            <div class="feature__price reveal d1">₹999</div>
+            <ul class="contents reveal d2">
+              <li><span class="idx">01</span> Malabar Pepper Cashews</li>
+              <li><span class="idx">02</span> Ghee-Roasted Makhana &amp; Almonds</li>
+              <li><span class="idx">03</span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
             </ul>
-            <div class="feature__cta">
-              <a class="tlink" href="festive.html#signature">View the Signature
+            <div class="feature__cta reveal d2">
+              <a class="ulink" href="festive.html#signature">View the Signature
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
@@ -162,65 +166,51 @@
         </article>
 
         <!-- Prestige + Quartet -->
-        <div class="pair">
-          <article class="pcard reveal">
-            <div class="pcard__media reveal-img">
-              <img src="assets/prestige-open.jpg" alt="The Prestige gift box open, with four glass jars" loading="lazy" />
-            </div>
-            <div class="pcard__body">
-              <h3>The Prestige</h3>
-              <p class="pcard__desc">Four distinctive flavours in our most refined festive presentation.</p>
-              <div class="pcard__price">₹1,199</div>
-              <p class="pcard__contents">Malabar Pepper Cashews · Smoked Almonds · Sea Salt &amp; Curry Leaf Makhana · Saffron &amp; Jaggery Dry Fruit Brittle</p>
-              <div class="pcard__cta">
-                <a class="tlink" href="festive.html#prestige">View the Prestige
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-              </div>
-            </div>
+        <div class="duo">
+          <article class="item reveal">
+            <div class="item__media reveal-img"><img src="assets/prestige-open.jpg" alt="The Prestige gift box open, with four labelled glass jars" loading="lazy" /></div>
+            <div class="item__head"><h3>The Prestige</h3><span class="price">₹1,199</span></div>
+            <p class="item__desc">Four distinctive flavours in our most refined festive presentation.</p>
+            <p class="item__contents">Malabar Pepper Cashews · Smoked Almonds · Sea Salt &amp; Curry Leaf Makhana · Saffron &amp; Jaggery Dry Fruit Brittle</p>
+            <div class="item__cta"><a class="ulink" href="festive.html#prestige">View the Prestige
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
           </article>
-
-          <article class="pcard reveal d1">
-            <div class="pcard__media reveal-img">
-              <img src="assets/quartet-open.jpg" alt="The Dry Fruit Quartet gift box open, with four dry-fruit selections" loading="lazy" />
-            </div>
-            <div class="pcard__body">
-              <h3>The Dry Fruit Quartet</h3>
-              <p class="pcard__desc">A festive classic, presented with a contemporary point of view.</p>
-              <div class="pcard__price">From ₹599</div>
-              <p class="pcard__contents">Cashews · Almonds · Raisins · Pistachios / Khurmani</p>
-              <div class="pcard__cta">
-                <a class="tlink" href="festive.html#quartet">View the Quartet
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </a>
-              </div>
-            </div>
+          <article class="item reveal d1">
+            <div class="item__media reveal-img"><img src="assets/quartet-open.jpg" alt="The Dry Fruit Quartet gift box open, with four dry-fruit selections" loading="lazy" /></div>
+            <div class="item__head"><h3>The Dry Fruit Quartet</h3><span class="price">From ₹599</span></div>
+            <p class="item__desc">A festive classic, presented with a contemporary point of view.</p>
+            <p class="item__contents">Cashews · Almonds · Raisins · Pistachios / Khurmani</p>
+            <div class="item__cta"><a class="ulink" href="festive.html#quartet">View the Quartet
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 6 — ABOUT -->
+    <!-- ABOUT -->
     <section class="about section">
       <div class="wrap">
-        <div class="about__inner">
+        <div class="marker reveal"><span>About</span><b>04</b></div>
+        <div class="about__grid" style="margin-top:clamp(32px,5vw,56px)">
           <h2 class="reveal">Built around the moments in between.</h2>
           <div class="about__body">
             <p class="reveal d1">in-Between Co is a food company built around a simple idea: some of the best food moments happen outside the big meals and big occasions.</p>
-            <p class="reveal d1">We’re building deliberately — choosing things we genuinely enjoy and creating gifts we would be happy to give ourselves. For now, that means doing fewer things, and doing them with care.</p>
+            <p class="reveal d2">We’re building deliberately — choosing things we genuinely enjoy and creating gifts we would be happy to give ourselves. For now, that means doing fewer things, and doing them with care.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 7 — CORPORATE / CONTACT -->
+    <!-- CONTACT / CORPORATE -->
     <section class="contact section" id="contact">
       <div class="wrap">
-        <div class="contact__inner">
-          <span class="eyebrow reveal">Corporate &amp; personalisation</span>
-          <h2 class="reveal d1">Make it yours.</h2>
-          <p class="contact__body reveal d2">Planning gifts for a team, clients or a larger group? Personalised presentation, greeting cards and multi-address delivery can be arranged for larger orders.</p>
-          <div class="contact__cta reveal d2">
+        <div class="marker reveal"><span>Corporate &amp; personalisation</span><b>05</b></div>
+        <div class="contact__grid" style="margin-top:clamp(32px,5vw,56px)">
+          <div>
+            <h2 class="reveal">Make it yours.</h2>
+            <p class="contact__body reveal d1">Planning gifts for a team, clients or a larger group? Personalised presentation, greeting cards and multi-address delivery can be arranged for larger orders.</p>
+          </div>
+          <div class="contact__cta reveal d1">
             <a class="btn" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20talk%20about%20a%20larger%20gifting%20order." target="_blank" rel="noopener">Talk to us on WhatsApp
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -231,15 +221,15 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="wrap">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="assets/logo-light.png" alt="in-Between Co" />
-          <p>Food worth sharing, for all the moments in between.</p>
+      <div class="footer__top">
+        <div>
+          <div class="footer__word">in-Between Co</div>
+          <p class="footer__tag">Food worth sharing, for all the moments in between.</p>
         </div>
         <nav class="footer__links" aria-label="Footer">
+          <a href="festive.html">Festive Edit 2026</a>
           <a href="https://instagram.com/eatinbetween.co" target="_blank" rel="noopener">Instagram</a>
           <a href="https://wa.me/919910493207" target="_blank" rel="noopener">WhatsApp</a>
           <a href="mailto:hello@eatinbetween.com">Email</a>

@@ -19,33 +19,30 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header" id="header">
     <div class="wrap nav">
-      <a class="nav__logo" href="index.html" aria-label="in-Between Co home">
-        <img src="assets/logo.png" alt="in-Between Co" />
-      </a>
+      <a class="nav__logo" href="index.html" aria-label="in-Between Co home"><img src="assets/logo.png" alt="in-Between Co" /></a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html#why">Why in-Between?</a>
         <a href="index.html#philosophy">Our Philosophy</a>
         <a href="festive.html" aria-current="page">Festive Edit 2026</a>
         <a href="#festive-contact">Contact</a>
       </nav>
-      <a class="nav__cta desk" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20from%20the%20Festive%20Edit%202026." target="_blank" rel="noopener">Order on WhatsApp
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <a class="nav__cta desk" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20from%20the%20Festive%20Edit%202026." target="_blank" rel="noopener">Order on WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-    <a class="mlink" href="index.html">Home</a>
-    <a class="mlink" href="#signature">The Signature</a>
-    <a class="mlink" href="#prestige">The Prestige</a>
-    <a class="mlink" href="#quartet">The Dry Fruit Quartet</a>
-    <a class="mlink" href="#festive-contact">Contact</a>
+    <a class="mlink" href="index.html"><i>—</i> Home</a>
+    <a class="mlink" href="#signature"><i>01</i> The Signature</a>
+    <a class="mlink" href="#prestige"><i>02</i> The Prestige</a>
+    <a class="mlink" href="#quartet"><i>03</i> The Dry Fruit Quartet</a>
+    <a class="mlink" href="#festive-contact"><i>04</i> Contact</a>
     <div class="mobile-nav__foot">
       <a class="btn btn--saffron" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20from%20the%20Festive%20Edit%202026." target="_blank" rel="noopener">Order on WhatsApp
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -56,30 +53,30 @@
   <main>
 
     <!-- Festive hero -->
-    <section class="fhero section">
-      <div class="wrap">
-        <div class="fhero__grid">
-          <div class="fhero__copy">
-            <span class="eyebrow reveal">The Festive Edit · 2026</span>
+    <section class="fhero">
+      <div class="split split--tl">
+        <div class="split__text">
+          <div class="split__inner">
+            <span class="label fhero__kicker reveal">The Festive Edit · 2026</span>
             <h1 class="reveal d1">Familiar favourites.<br>A more considered way to gift them.</h1>
             <p class="fhero__body reveal d2">Food we enjoy, distinctive flavours and presentation designed to make the gesture feel special — brought together in three festive gifts.</p>
             <div class="fhero__actions reveal d2">
               <a class="btn btn--saffron" href="#signature">View the collection
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
               </a>
-              <a class="tlink" href="#festive-contact">Talk to us</a>
+              <a class="ulink" href="#festive-contact">Talk to us</a>
             </div>
           </div>
-          <div class="fhero__media reveal-img">
-            <!-- Product image: closed Signature box (replaceable) -->
-            <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed, with gold-foil detailing" width="1050" height="970" fetchpriority="high" />
-          </div>
+        </div>
+        <div class="split__media reveal-img">
+          <!-- Product image: closed Signature box (replaceable) -->
+          <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed, with gold-foil detailing" width="1050" height="970" fetchpriority="high" />
         </div>
       </div>
     </section>
 
     <!-- Products -->
-    <section class="fproducts">
+    <section class="fproducts section">
       <div class="wrap">
 
         <!-- Signature — lead -->
@@ -88,19 +85,16 @@
             <img src="assets/signature-open.jpg" alt="The Signature gift box open, showing three labelled glass jars" loading="lazy" />
           </div>
           <div class="fproduct__info">
-            <span class="fproduct__no">Festive gift · 01</span>
+            <span class="fproduct__no">01</span>
             <h2>The Signature</h2>
             <p class="fproduct__desc">Our three-jar signature gift, bringing together familiar flavours with a little more character.</p>
             <div class="fproduct__price"><span class="amt">₹999</span></div>
             <ul class="contents">
-              <li><span class="dot"></span> Malabar Pepper Cashews</li>
-              <li><span class="dot"></span> Ghee-Roasted Makhana &amp; Almonds</li>
-              <li><span class="dot"></span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
+              <li><span class="idx">01</span> Malabar Pepper Cashews</li>
+              <li><span class="idx">02</span> Ghee-Roasted Makhana &amp; Almonds</li>
+              <li><span class="idx">03</span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
             </ul>
-            <div class="fmeta">
-              <span><b>3</b> glass jars</span>
-              <span><b>350 g</b> net</span>
-            </div>
+            <div class="fproduct__meta"><span><b>3</b> glass jars</span><span><b>350 g</b> net</span></div>
             <div class="fproduct__cta">
               <a class="btn btn--saffron" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20The%20Signature%20(%E2%82%B9999)." target="_blank" rel="noopener">Enquire on WhatsApp
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -115,20 +109,17 @@
             <img src="assets/prestige-open.jpg" alt="The Prestige gift box open, showing four labelled glass jars" loading="lazy" />
           </div>
           <div class="fproduct__info">
-            <span class="fproduct__no">Festive gift · 02</span>
+            <span class="fproduct__no">02</span>
             <h2>The Prestige</h2>
             <p class="fproduct__desc">Four distinctive flavours in our most refined festive presentation.</p>
             <div class="fproduct__price"><span class="amt">₹1,199</span></div>
             <ul class="contents">
-              <li><span class="dot"></span> Malabar Pepper Cashews</li>
-              <li><span class="dot"></span> Smoked Almonds</li>
-              <li><span class="dot"></span> Sea Salt &amp; Curry Leaf Makhana</li>
-              <li><span class="dot"></span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
+              <li><span class="idx">01</span> Malabar Pepper Cashews</li>
+              <li><span class="idx">02</span> Smoked Almonds</li>
+              <li><span class="idx">03</span> Sea Salt &amp; Curry Leaf Makhana</li>
+              <li><span class="idx">04</span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
             </ul>
-            <div class="fmeta">
-              <span><b>4</b> glass jars</span>
-              <span><b>335 g</b> net</span>
-            </div>
+            <div class="fproduct__meta"><span><b>4</b> glass jars</span><span><b>335 g</b> net</span></div>
             <div class="fproduct__cta">
               <a class="btn btn--saffron" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20The%20Prestige%20(%E2%82%B91%2C199)." target="_blank" rel="noopener">Enquire on WhatsApp
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -143,7 +134,7 @@
             <img src="assets/quartet-open.jpg" alt="The Dry Fruit Quartet gift box open, showing four dry-fruit selections" loading="lazy" />
           </div>
           <div class="fproduct__info">
-            <span class="fproduct__no">Festive gift · 03</span>
+            <span class="fproduct__no">03</span>
             <h2>The Dry Fruit Quartet</h2>
             <p class="fproduct__desc">A festive classic, presented with a contemporary point of view.</p>
             <div class="fproduct__price">
@@ -151,15 +142,12 @@
               <span class="tier"><b>300 g</b> ₹699</span>
             </div>
             <ul class="contents">
-              <li><span class="dot"></span> Cashews</li>
-              <li><span class="dot"></span> Almonds</li>
-              <li><span class="dot"></span> Raisins</li>
-              <li><span class="dot"></span> Pistachios / Khurmani</li>
+              <li><span class="idx">01</span> Cashews</li>
+              <li><span class="idx">02</span> Almonds</li>
+              <li><span class="idx">03</span> Raisins</li>
+              <li><span class="idx">04</span> Pistachios / Khurmani</li>
             </ul>
-            <div class="fmeta">
-              <span><b>4</b> selections</span>
-              <span><b>200 g</b> / <b>300 g</b></span>
-            </div>
+            <div class="fproduct__meta"><span><b>4</b> selections</span><span><b>200 g</b> / <b>300 g</b></span></div>
             <div class="fproduct__cta">
               <a class="btn btn--saffron" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20order%20The%20Dry%20Fruit%20Quartet." target="_blank" rel="noopener">Enquire on WhatsApp
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -167,17 +155,20 @@
             </div>
           </div>
         </article>
+
       </div>
     </section>
 
-    <!-- Corporate / personalisation -->
+    <!-- Corporate / contact -->
     <section class="contact section" id="festive-contact">
       <div class="wrap">
-        <div class="contact__inner">
-          <span class="eyebrow reveal">Corporate &amp; personalisation</span>
-          <h2 class="reveal d1">Make it yours.</h2>
-          <p class="contact__body reveal d2">Planning gifts for a team, clients or a larger group? Personalised presentation, greeting cards and multi-address delivery can be arranged for larger orders.</p>
-          <div class="contact__cta reveal d2">
+        <div class="marker reveal"><span>Corporate &amp; personalisation</span><b>04</b></div>
+        <div class="contact__grid" style="margin-top:clamp(32px,5vw,56px)">
+          <div>
+            <h2 class="reveal">Make it yours.</h2>
+            <p class="contact__body reveal d1">Planning gifts for a team, clients or a larger group? Personalised presentation, greeting cards and multi-address delivery can be arranged for larger orders.</p>
+          </div>
+          <div class="contact__cta reveal d1">
             <a class="btn" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20talk%20about%20a%20larger%20festive%20gifting%20order." target="_blank" rel="noopener">Talk to us on WhatsApp
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -188,13 +179,12 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="wrap">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <img src="assets/logo-light.png" alt="in-Between Co" />
-          <p>Food worth sharing, for all the moments in between.</p>
+      <div class="footer__top">
+        <div>
+          <div class="footer__word">in-Between Co</div>
+          <p class="footer__tag">Food worth sharing, for all the moments in between.</p>
         </div>
         <nav class="footer__links" aria-label="Footer">
           <a href="index.html">Home</a>
