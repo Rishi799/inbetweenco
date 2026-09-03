@@ -1,42 +1,43 @@
-# in-Between Co — Brand Website
+# in-Between Co — Website
 
-A premium two-page marketing site for **in-Between Co**, a thoughtful makhana / dry-fruit
-snacking & festive-gifting brand. Hand-built static HTML/CSS/JS — no build step, no dependencies.
+A focused two-page site for **in-Between Co**, built to the *Website Rebuild Brief*:
+build credibility, explain the philosophy and the thinking behind the name, and present
+**The Festive Edit 2026** — leading interested visitors to WhatsApp. Hand-built static
+HTML/CSS/JS, no build step, no dependencies.
 
 ## Pages
-- **`index.html`** — homepage: hero, festive-collection banner (entry point), *Why in-Between?*,
-  *What we do* (3 pillars), *The in-Between Standard*, *Our promise*, *Stay in between* (contact), footer.
-- **`festive.html`** — The Festive Edit 2026: festive hero, brand standard, the three gift
-  collections (Signature ₹999 · Prestige ₹1,199 · Quartet ₹599/699), corporate gifting, enquiry CTA.
+- **`index.html`** — Hero → Why in-Between? → Our Philosophy → Festive Edit intro →
+  The Collection (Signature-led) → About → Corporate/Contact → Footer.
+- **`festive.html`** — Festive hero → the three gifts (Signature, Prestige, Quartet) with
+  price, contents, jar count & net quantity → Corporate/Contact → Footer.
 
-The homepage links into the festive page via the header CTA (“Festive Edit 2026”), a full-width
-“Explore the Festive Collection” banner under the hero, the mobile menu, and the footer.
+## Design system
+- **Type (locked):** Instrument Serif (display/editorial, Regular only) + Manrope (functional).
+- **Colour:** warm cream dominant, Midnight Indigo `#172B3D` contrast sections, Burnt Saffron
+  `#C57832` accent, muted ochre `#B39862` secondary. Digital gold is avoided — the only gold is
+  the physical foil on the Signature packaging.
+- Restrained motion: subtle scroll reveals, gentle image entrance, refined hover, underline/arrow
+  transitions. No parallax, counters, carousels or floating decoration.
 
-## Structure
-```
-index.html          homepage
-festive.html        festive collection page
-css/styles.css      design system + all components
-js/main.js          sticky header, mobile nav, scroll reveals, parallax, smooth scroll
-assets/             web-ready images (logo, food visuals, packshots)
-assets/extracted/   raw images pulled from the source PDFs (kept for reference)
-```
+## Images
+- `assets/hero.jpg` — the supplied final hero photograph (makhana, edamame, dry-fruit mix, millet).
+- `assets/signature-closed.jpg`, `signature-open.jpg`, `prestige-open.jpg`, `quartet-open.jpg` —
+  product visuals sourced from the Festive Edit PDF (design-reference quality).
 
-## Brand system (locked)
-- **Colours** — Midnight Indigo `#172B3D`, Burnt Saffron `#C57832`, Printed Ochre `#B39862`,
-  Warm Ivory `#F1E5CE` (hexes taken from the Shopify launch brief, the newest locked spec).
-- **Type** — Fraunces (editorial serif, headlines) + Inter (sans, body). Two families only.
-- Copy for *Why in-Between?* and *Our promise* matches the launch brief verbatim.
+**Image-replacement architecture:** each product image is a plain `<img>` inside a fixed-aspect,
+`object-fit: cover` container. To swap in final product photography later, replace the file in
+`assets/` (or change the `src`) — no section rebuild needed.
+
+## Prices (source of truth)
+Signature ₹999 · Prestige ₹1,199 · Dry Fruit Quartet ₹599 (200 g) / ₹699 (300 g).
+Homepage shows "From ₹599"; the Festive page shows both tiers. Prices include GST where appropriate.
 
 ## Run it
-Any static server works. For example:
 ```bash
 python -m http.server 5178
 ```
 Then open <http://localhost:5178/index.html>.
 
-## Notes / next steps
-- Product prices and copy come from the Festive Edit 2026 brochure.
-- WhatsApp CTAs deep-link to **+91 99104 93207**; Instagram links to **@eatinbetween.co**.
-- Ready to port to Shopify: keep headline / philosophy / promise as live theme text (per the brief),
-  and use the files in `assets/` as image assets.
+## Note
+The footer **Email** link uses `hello@eatinbetween.com` as a placeholder — replace it with the real
+brand mailbox. WhatsApp links point to **+91 99104 93207**; Instagram to **@eatinbetween.co**.
