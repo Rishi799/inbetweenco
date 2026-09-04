@@ -192,8 +192,10 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
    Why in-Between — big editorial type, offset
    ============================================================ */
 .why { background: var(--cream-2); }
-.why__grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 9fr); gap: clamp(24px, 4vw, 56px); }
-.why__aside { padding-top: 8px; }
+.why__grid { display: grid; grid-template-columns: minmax(0, 3.2fr) minmax(0, 8fr); gap: clamp(24px, 4vw, 56px); }
+.why__aside { padding-top: 6px; }
+.why__aside .label { font-size: 1.1rem; font-weight: 700; letter-spacing: .06em; color: var(--indigo); }
+.why__aside .label::before { width: 34px; background: var(--saffron); }
 .why__aside .num { display: none; }
 .why__stanza { color: var(--indigo); font-size: clamp(1.15rem, 1.9vw, 1.55rem); line-height: 1.45; letter-spacing: -0.01em; max-width: 32ch; font-weight: 500; }
 .why__stanza .soft { color: var(--ink-soft); font-weight: 400; }
