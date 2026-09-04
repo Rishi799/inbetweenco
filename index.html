@@ -13,8 +13,8 @@
   <link rel="icon" href="assets/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
   <script>document.documentElement.className += " js";</script>
 </head>
 <body>
@@ -25,7 +25,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#why">Why in-Between?</a>
         <a href="#philosophy">Our Philosophy</a>
-        <a href="festive.html">Festive Edit 2026</a>
+        <a href="#festive">Festive Edit 2026</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav__right">
@@ -38,10 +38,10 @@
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-    <a class="mlink" href="#why"><i>01</i> Why in-Between?</a>
-    <a class="mlink" href="#philosophy"><i>02</i> Our Philosophy</a>
-    <a class="mlink" href="festive.html"><i>03</i> Festive Edit 2026</a>
-    <a class="mlink" href="#contact"><i>04</i> Contact</a>
+    <a class="mlink" href="#why">Why in-Between?</a>
+    <a class="mlink" href="#philosophy">Our Philosophy</a>
+    <a class="mlink" href="#festive">Festive Edit 2026</a>
+    <a class="mlink" href="#contact">Contact</a>
     <div class="mobile-nav__foot">
       <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -51,7 +51,7 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- 1 — HERO -->
     <section class="hero">
       <div class="split split--tl">
         <div class="split__text">
@@ -59,7 +59,7 @@
             <h1 class="reveal">Food worth sharing.<br>For all the moments <span class="accent">in between.</span></h1>
             <p class="hero__body reveal d1">From everyday snacking to something brought out for friends, family or an occasion — we like food that earns its place on the table.</p>
             <div class="hero__actions reveal d2">
-              <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
+              <a class="btn btn--saffron" href="#festive">Explore the Festive Edit 2026
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
               <a class="ulink" href="#why">Why in-Between?
@@ -70,41 +70,16 @@
         </div>
         <div class="split__media hero__media reveal-img">
           <img src="assets/hero.jpg" alt="Bowls of makhana, roasted edamame, dry-fruit mix and millet on a warm neutral table" width="1536" height="1024" fetchpriority="high" />
-          <span class="split__cap">Makhana · Edamame · Dry fruit · Millet</span>
         </div>
       </div>
     </section>
 
-    <!-- FESTIVE BAND — distinct festive entry -->
-    <section class="festband" id="festive">
-      <div class="split split--tl">
-        <div class="split__text">
-          <div class="split__inner">
-            <span class="label reveal">The Festive Edit · 2026</span>
-            <h2 class="reveal d1">Familiar favourites.<br>A more considered way to gift them.</h2>
-            <p class="festband__body reveal d2">Our Festive Edit brings together food we enjoy, distinctive flavours and presentation designed to make the gesture feel special.</p>
-            <div class="festband__actions reveal d2">
-              <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-              <span class="festband__note"><b>From ₹599</b> · three gift boxes</span>
-            </div>
-          </div>
-        </div>
-        <div class="split__media reveal-img">
-          <!-- Product image: closed Signature box (replaceable) -->
-          <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed, with gold-foil detailing" width="1050" height="970" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY -->
+    <!-- 2 — WHY IN-BETWEEN -->
     <section class="why section" id="why">
       <div class="wrap">
         <div class="why__grid">
           <div class="why__aside reveal">
             <span class="label">Why in-Between?</span>
-            <span class="num">01</span>
           </div>
           <p class="why__stanza reveal d1">
             Most of what we eat isn’t part of a meal.<br>
@@ -115,10 +90,10 @@
       </div>
     </section>
 
-    <!-- PHILOSOPHY -->
+    <!-- 3 — OUR PHILOSOPHY -->
     <section class="philosophy section" id="philosophy">
       <div class="wrap">
-        <div class="marker reveal"><span>Our Philosophy</span><b>02</b></div>
+        <div class="marker reveal"><span>Our Philosophy</span></div>
         <div class="philosophy__grid">
           <div class="philosophy__lead">
             <h2 class="reveal">Our standard is personal.</h2>
@@ -135,11 +110,32 @@
       </div>
     </section>
 
-    <!-- THE COLLECTION -->
-    <section class="collection section" id="collection">
+    <!-- 4 — FESTIVE EDIT + COLLECTION -->
+    <section class="festband" id="festive">
+      <div class="split split--tl">
+        <div class="split__text">
+          <div class="split__inner">
+            <h2 class="reveal">The Festive Edit 2026</h2>
+            <p class="festband__sub reveal d1">Familiar favourites. A more considered way to gift them.</p>
+            <p class="festband__body reveal d2">Food we enjoy, distinctive flavours and presentation designed to make the gesture feel special.</p>
+            <div class="festband__actions reveal d2">
+              <a class="btn btn--saffron" href="festive.html">Explore the Festive Edit 2026
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <span class="festband__note"><b>From ₹599</b> · three gift boxes</span>
+            </div>
+          </div>
+        </div>
+        <div class="split__media reveal-img">
+          <img src="assets/signature-closed.jpg" alt="The in-Between Signature festive gift box, closed" width="1050" height="970" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="collection section">
       <div class="wrap">
         <div class="collection__head">
-          <div class="marker reveal"><span>The Collection</span><b>03</b></div>
+          <div class="marker reveal"><span>The Collection</span></div>
           <h2 class="reveal d1">Three gifts for the season.</h2>
         </div>
 
@@ -149,14 +145,13 @@
             <img src="assets/signature-open.jpg" alt="The Signature gift box open, with three labelled glass jars" loading="lazy" />
           </div>
           <div class="feature__info">
-            <span class="feature__no reveal">01</span>
             <h3 class="reveal">The Signature</h3>
             <p class="feature__desc reveal d1">Our three-jar signature gift, bringing together familiar flavours with a little more character.</p>
             <div class="feature__price reveal d1">₹999</div>
             <ul class="contents reveal d2">
-              <li><span class="idx">01</span> Malabar Pepper Cashews</li>
-              <li><span class="idx">02</span> Ghee-Roasted Makhana &amp; Almonds</li>
-              <li><span class="idx">03</span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
+              <li><span class="idx">·</span> Malabar Pepper Cashews</li>
+              <li><span class="idx">·</span> Ghee-Roasted Makhana &amp; Almonds</li>
+              <li><span class="idx">·</span> Saffron &amp; Jaggery Dry Fruit Brittle</li>
             </ul>
             <div class="feature__cta reveal d2">
               <a class="ulink" href="festive.html#signature">View the Signature
@@ -188,10 +183,32 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- 5 — CORPORATE / PERSONALISATION -->
+    <section class="contact section" id="corporate">
+      <div class="wrap">
+        <div class="marker reveal"><span>Corporate &amp; personalisation</span></div>
+        <div class="corp__head reveal">
+          <h2>Make it yours.</h2>
+          <p>A considered personal touch for teams, clients and the people behind every gift.</p>
+        </div>
+        <div class="ways">
+          <div class="way reveal"><div class="no">01</div><h3>Client-branded sleeve</h3><p>Your logo on a clean outer sleeve, without disturbing the box artwork.</p></div>
+          <div class="way reveal d1"><div class="no">02</div><h3>Customised greeting card</h3><p>A festive message, carefully typeset and placed inside every box.</p></div>
+          <div class="way reveal d2"><div class="no">03</div><h3>Recipient-name personalisation</h3><p>Individual employee or client names on every gift.</p></div>
+        </div>
+        <p class="corp__note reveal">Available across all three collections. Customisation is charged separately; minimum quantities and production timelines apply.</p>
+        <div class="corp__cta reveal">
+          <a class="btn" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20talk%20about%20a%20larger%20gifting%20order." target="_blank" rel="noopener">Talk to us on WhatsApp
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 — ABOUT -->
     <section class="about section">
       <div class="wrap">
-        <div class="marker reveal"><span>About</span><b>04</b></div>
+        <div class="marker reveal"><span>About</span></div>
         <div class="about__grid" style="margin-top:clamp(32px,5vw,56px)">
           <h2 class="reveal">Built around the moments in between.</h2>
           <div class="about__body">
@@ -202,19 +219,20 @@
       </div>
     </section>
 
-    <!-- CONTACT / CORPORATE -->
+    <!-- 7 — CONTACT -->
     <section class="contact section" id="contact">
       <div class="wrap">
-        <div class="marker reveal"><span>Corporate &amp; personalisation</span><b>05</b></div>
+        <div class="marker reveal"><span>Contact</span></div>
         <div class="contact__grid" style="margin-top:clamp(32px,5vw,56px)">
           <div>
-            <h2 class="reveal">Make it yours.</h2>
-            <p class="contact__body reveal d1">Planning gifts for a team, clients or a larger group? Personalised presentation, greeting cards and multi-address delivery can be arranged for larger orders.</p>
+            <h2 class="reveal">Stay in between.</h2>
+            <p class="contact__body reveal d1">Follow our latest drops and festive collections, or reach us directly — we’re always happy to help with a gift.</p>
           </div>
-          <div class="contact__cta reveal d1">
-            <a class="btn" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20talk%20about%20a%20larger%20gifting%20order." target="_blank" rel="noopener">Talk to us on WhatsApp
+          <div class="contact__cta reveal d1" style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn" href="https://wa.me/919910493207?text=Hi%20in-Between%20Co%2C%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener">WhatsApp us
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
+            <a class="btn btn--outline" href="https://instagram.com/eatinbetween.co" target="_blank" rel="noopener">Instagram</a>
           </div>
         </div>
       </div>
