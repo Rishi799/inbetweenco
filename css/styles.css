@@ -126,7 +126,7 @@ h1,h2,h3,h4 { font-family: var(--sans); font-weight: 700; line-height: 1.14; let
 }
 .header.scrolled { background: color-mix(in srgb, var(--cream) 95%, transparent); border-bottom-color: var(--line); }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 28px; height: 72px; }
-.nav__logo img { height: 25px; width: auto; }
+.nav__logo img { height: 40px; width: auto; }
 .nav__links { display: flex; align-items: center; gap: 34px; }
 .nav__links a {
   font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
