@@ -33,7 +33,7 @@
   --edge: max(0px, calc((100vw - var(--maxw)) / 2));
   --r: 2px;
   --ease: cubic-bezier(.4,.14,.16,1);
-  --section: clamp(84px, 12vw, 172px);
+  --section: clamp(88px, 11vw, 176px);
 }
 
 /* Reset */
@@ -60,9 +60,11 @@ h1,h2,h3,h4 { font-family: var(--serif); font-weight: 400; line-height: 1.05; le
 
 /* Micro-label / eyebrow */
 .label {
+  display: inline-flex; align-items: center; gap: .85em;
   font-family: var(--sans); font-size: .7rem; font-weight: 600;
-  letter-spacing: .17em; text-transform: uppercase; color: var(--saffron);
+  letter-spacing: .2em; text-transform: uppercase; color: var(--saffron);
 }
+.label::before { content: ""; width: 30px; height: 1px; background: currentColor; opacity: .85; }
 .label--muted { color: var(--ink-faint); }
 
 /* Layout */
@@ -158,19 +160,21 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
 /* ============================================================
    Full-bleed split (asymmetric image + text)
    ============================================================ */
+/* Full-bleed split: image anchors to the page edge and fills the screen
+   on laptops; heights kept gentle/refined (not aggressive). */
 .split { display: grid; align-items: stretch; }
 .split__text { display: flex; flex-direction: column; justify-content: center; padding-block: var(--section); }
-.split__inner { width: 100%; }
+.split__inner { width: 100%; max-width: 40rem; }
 .split__media { position: relative; align-self: stretch; }
 .split__media img { width: 100%; height: 100%; object-fit: cover; }
-.split__cap { position: absolute; left: 20px; bottom: 18px; font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark); background: rgba(16,32,45,.62); padding: 7px 12px; border-radius: var(--r); backdrop-filter: blur(3px); }
+.split__cap { position: absolute; left: 18px; bottom: 16px; font-size: .64rem; letter-spacing: .14em; text-transform: uppercase; color: var(--on-dark); background: rgba(16,32,45,.62); padding: 7px 12px; border-radius: var(--r); backdrop-filter: blur(3px); }
 
 /* text on left, media bleeds right */
 .split--tl { grid-template-columns: minmax(0,46fr) minmax(0,54fr); }
-.split--tl .split__text { padding-inline: calc(var(--edge) + var(--gutter)) clamp(28px,4vw,64px); }
+.split--tl .split__text { padding-inline: calc(var(--edge) + var(--gutter)) clamp(30px,4vw,68px); }
 /* text on right, media bleeds left */
 .split--tr { grid-template-columns: minmax(0,54fr) minmax(0,46fr); }
-.split--tr .split__text { padding-inline: clamp(28px,4vw,64px) calc(var(--edge) + var(--gutter)); }
+.split--tr .split__text { padding-inline: clamp(30px,4vw,68px) calc(var(--edge) + var(--gutter)); }
 
 /* ============================================================
    Hero
@@ -182,7 +186,7 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
 .hero h1 .accent { color: var(--saffron); }
 .hero__body { margin-top: 28px; max-width: 40ch; font-size: clamp(1.05rem, 1.35vw, 1.2rem); color: var(--ink-soft); }
 .hero__actions { margin-top: 38px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 30px; }
-.hero__media { min-height: clamp(340px, 52vw, 620px); }
+.hero__media { min-height: clamp(320px, 44vw, 524px); }
 
 /* ============================================================
    Why in-Between — big editorial type, offset
@@ -273,14 +277,44 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
 @media (min-width: 901px) { .contact__cta { justify-self: end; } }
 
 /* ============================================================
+   Festive band (distinct festive entry, homepage)
+   ============================================================ */
+.festband { background: var(--indigo); color: var(--on-dark); border-bottom: 1px solid var(--indigo-2); }
+.festband .split__text { padding-block: clamp(58px, 8vw, 112px); }
+.festband .label { color: var(--saffron); display: block; margin-bottom: 22px; }
+.festband h2 { color: var(--cream); font-size: clamp(2.1rem, 4.4vw, 3.25rem); line-height: 1.06; }
+.festband__body { margin-top: 22px; max-width: 42ch; color: var(--on-dark-soft); font-size: clamp(1.02rem, 1.3vw, 1.14rem); }
+.festband__actions { margin-top: 34px; display: flex; align-items: center; flex-wrap: wrap; gap: 18px 26px; }
+.festband__note { font-size: .78rem; letter-spacing: .06em; color: var(--on-dark-soft); text-transform: uppercase; }
+.festband__note b { font-family: var(--serif); color: var(--saffron); font-size: 1.15rem; text-transform: none; margin-right: 4px; }
+.festband .split__media { min-height: clamp(300px, 40vw, 480px); background: var(--indigo-2); }
+
+/* ============================================================
+   Corporate / personalisation — "three ways"
+   ============================================================ */
+.corp__head { max-width: 640px; margin-top: clamp(30px, 5vw, 52px); }
+.corp__head h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.corp__head p { margin-top: 18px; color: var(--ink-soft); max-width: 46ch; }
+.ways { margin-top: clamp(40px, 5vw, 62px); display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(26px, 3vw, 48px); }
+.way { border-top: 1px solid var(--line); padding-top: 22px; }
+.way .no { font-family: var(--serif); font-size: 1.9rem; color: var(--saffron); line-height: 1; }
+.way h3 { font-size: 1.3rem; margin-top: 14px; }
+.way p { margin-top: 12px; color: var(--ink-soft); font-size: .96rem; }
+.corp__note { margin-top: clamp(30px, 4vw, 44px); color: var(--ink-faint); font-size: .86rem; max-width: 60ch; }
+.corp__cta { margin-top: 26px; }
+@media (max-width: 900px) { .ways { grid-template-columns: 1fr; gap: 26px; } }
+
+/* ============================================================
    Footer
    ============================================================ */
 .footer { background: var(--indigo-2); color: var(--on-dark); padding-block: clamp(60px, 8vw, 96px); }
 .footer__top { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px 40px; align-items: start; }
+.footer__logo { height: 42px; width: auto; }
 .footer__word { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 4.5rem); color: var(--cream); line-height: 1; letter-spacing: -0.02em; }
-.footer__tag { margin-top: 20px; color: var(--on-dark-soft); max-width: 30ch; font-size: .98rem; }
-.footer__links { display: grid; gap: 14px; justify-items: start; align-content: start; }
-.footer__links a { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-soft); transition: color .25s var(--ease); }
+.footer__tag { margin-top: 22px; color: var(--on-dark-soft); max-width: 30ch; font-size: .98rem; }
+.footer__links { display: grid; gap: 16px; justify-items: start; align-content: start; }
+.footer__links a { display: inline-flex; align-items: center; gap: .65em; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-soft); transition: color .25s var(--ease); }
+.footer__links svg { width: 15px; height: 15px; flex: none; color: var(--saffron); }
 .footer__links a:hover { color: var(--saffron); }
 .footer__bottom { margin-top: clamp(48px, 7vw, 80px); padding-top: 22px; border-top: 1px solid var(--on-dark-line); display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
 .footer__bottom p, .footer__bottom a { color: rgba(241,229,206,.5); font-size: .78rem; letter-spacing: .04em; }
@@ -290,7 +324,7 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
    FESTIVE PAGE
    ============================================================ */
 .fhero { border-bottom: 1px solid var(--line-soft); }
-.fhero .split__media { min-height: clamp(360px, 50vw, 640px); background: var(--paper); }
+.fhero .split__media { min-height: clamp(340px, 44vw, 540px); background: var(--paper); }
 .fhero__kicker { margin-bottom: 24px; }
 .fhero h1 { font-size: clamp(2.6rem, 5.4vw, 4.25rem); line-height: 1.02; letter-spacing: -0.02em; }
 .fhero__body { margin-top: 24px; max-width: 42ch; color: var(--ink-soft); font-size: clamp(1.05rem,1.35vw,1.2rem); }
@@ -330,6 +364,19 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
 }
 
 /* ============================================================
+   Desktop: gentle, balanced hero image height (not stretched tall)
+   ============================================================ */
+@media (min-width: 901px) {
+  .hero .split, .fhero .split { align-items: center; }
+  .hero .split--tl { grid-template-columns: minmax(0,50fr) minmax(0,50fr); }
+  .hero .split__text, .fhero .split__text { padding-block: clamp(44px, 4.5vw, 74px); }
+  .hero h1 { font-size: clamp(2.5rem, 4.5vw, 3.7rem); }
+  .fhero h1 { font-size: clamp(2.4rem, 4.3vw, 3.4rem); }
+  .hero__media, .fhero .split__media { min-height: 0; align-self: center; }
+  .hero__media img, .fhero .split__media img { height: clamp(400px, 34vw, 500px); }
+}
+
+/* ============================================================
    Reveal (restrained) — JS-gated
    ============================================================ */
 html.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
@@ -352,9 +399,10 @@ html.js .reveal.d3 { transition-delay: .24s; }
   .nav__toggle { display: block; }
 
   .split { grid-template-columns: 1fr !important; }
-  .split__text { padding-inline: var(--gutter) !important; padding-block: clamp(48px,9vw,72px) !important; }
+  .split__text { padding-inline: var(--gutter) !important; padding-block: clamp(48px,9vw,76px) !important; }
+  .split__inner { max-width: none; }
   .split__media { min-height: 0 !important; }
-  .split__media img { aspect-ratio: 3/2; }
+  .split__media img { aspect-ratio: 4/3; }
   .hero .split__media { order: 2; }
   .festive-intro .split__media, .fhero .split__media { order: -1; }
 
