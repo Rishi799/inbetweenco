@@ -405,8 +405,8 @@ html.js .reveal.d3 { transition-delay: .24s; }
   .split__inner { max-width: none; }
   .split__media { min-height: 0 !important; }
   .split__media img { aspect-ratio: 4/3; }
-  /* Mobile hero: image first and prominent (nishu) */
-  .hero .split__media { order: -1; }
+  /* Mobile hero: text first, then image */
+  .hero .split__media { order: 2; }
   .hero__media img { aspect-ratio: 5/4; height: auto; }
   .fhero .split__media { order: -1; }
 
