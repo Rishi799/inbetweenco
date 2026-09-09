@@ -302,6 +302,7 @@ body.nav-open .mobile-nav { transform: none; visibility: visible; }
 .stdband__row li:not(:last-child)::after { content: "·"; color: var(--saffron); position: absolute; right: -17px; }
 
 .festband { background: var(--cream); color: var(--ink); border-block: 1px solid var(--line-soft); }
+.festband .split { grid-template-columns: 1fr; }
 .festband .split__text { padding-block: clamp(58px, 8vw, 112px); }
 .festband h2 { color: var(--indigo); font-size: clamp(2rem, 4.8vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.03; }
 .festband__sub { margin-top: 14px; color: var(--indigo); font-size: clamp(1.1rem, 1.8vw, 1.45rem); font-weight: 500; max-width: 30ch; line-height: 1.3; }
